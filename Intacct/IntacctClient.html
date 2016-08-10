@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Intacct\IntacctClient | Intacct SDK for PHP</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Intacct_IntacctClient" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Intacct SDK for PHP</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../Intacct.html">Intacct</a></li>
+    
+                <li>IntacctClient</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            IntacctClient
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>IntacctClient</strong>
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>PROFILE_ENV_NAME</td>
+                <td class="last">
+                    <p><em>Profile environment name</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $params = array())
+        
+                                            <p>Initializes the class with the given parameters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../Intacct/Credentials/SessionCredentials.html"><abbr title="Intacct\Credentials\SessionCredentials">SessionCredentials</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSessionCreds">getSessionCreds</a>()
+        
+                                            <p>Session credentials</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRandomControlId">getRandomControlId</a>()
+        
+                                            <p>Generate a version 4 (random) UUID</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLastExecution">getLastExecution</a>()
+        
+                                            <p>Get array of the last execution's requests and responses</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../Intacct/Xml/SynchronousResponse.html"><abbr title="Intacct\Xml\SynchronousResponse">SynchronousResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_execute">execute</a>(<a href="../Intacct/Content.html"><abbr title="Intacct\Content">Content</abbr></a> $contentBlock, bool $transaction = false, string $requestControlId = null, bool $uniqueFunctionControlIds = false, array $params = array())
+        
+                                            <p>Execute a synchronous request to the API</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../Intacct/Xml/AsynchronousResponse.html"><abbr title="Intacct\Xml\AsynchronousResponse">AsynchronousResponse</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_executeAsync">executeAsync</a>(<a href="../Intacct/Content.html"><abbr title="Intacct\Content">Content</abbr></a> $contentBlock, string $asyncPolicyId, bool $transaction = false, string $requestControlId = null, bool $uniqueFunctionControlIds = false, array $params = array())
+        
+                                            <p>Execute an asynchronous request to the API</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line         line 77</div>
+        <code>                    
+    <strong>__construct</strong>(array $params = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initializes the class with the given parameters.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>{
+     @var string $company<em>id Intacct company ID
+     @var string $endpoint</em>url Endpoint URL
+     @var LoggerInterface $logger
+     @var MessageFormatter $log<em>formatter
+     @var int $log</em>level Log level to use, default=400
+     @var int $max<em>retries Max number of retries, default=5
+     @var int[] $no</em>retry<em>server</em>error<em>codes HTTP server error codes to abort
+         retrying if one occurs, default=[ 524 ]
+     @var string $profile</em>file Profile file to load from
+     @var string $profile<em>name Profile name to use
+     @var string $sender</em>id Intacct sender ID
+     @var string $sender<em>password Intacct sender password
+     @var string $session</em>id Intacct session ID
+     @var string $user<em>id Intacct user ID
+     @var string $user</em>password Intacct user password
+     @var bool $verify_ssl Verify SSL certificate of response, default=true
+}</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSessionCreds">
+        <div class="location">at line         line 114</div>
+        <code>                    <a href="../Intacct/Credentials/SessionCredentials.html"><abbr title="Intacct\Credentials\SessionCredentials">SessionCredentials</abbr></a>
+    <strong>getSessionCreds</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Session credentials</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Intacct/Credentials/SessionCredentials.html"><abbr title="Intacct\Credentials\SessionCredentials">SessionCredentials</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRandomControlId">
+        <div class="location">at line         line 146</div>
+        <code>                    string
+    <strong>getRandomControlId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Generate a version 4 (random) UUID</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastExecution">
+        <div class="location">at line         line 156</div>
+        <code>                    array
+    <strong>getLastExecution</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get array of the last execution's requests and responses</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_execute">
+        <div class="location">at line         line 172</div>
+        <code>                    <a href="../Intacct/Xml/SynchronousResponse.html"><abbr title="Intacct\Xml\SynchronousResponse">SynchronousResponse</abbr></a>
+    <strong>execute</strong>(<a href="../Intacct/Content.html"><abbr title="Intacct\Content">Content</abbr></a> $contentBlock, bool $transaction = false, string $requestControlId = null, bool $uniqueFunctionControlIds = false, array $params = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute a synchronous request to the API</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Intacct/Content.html"><abbr title="Intacct\Content">Content</abbr></a></td>
+                <td>$contentBlock</td>
+                <td>Content block to send</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$transaction</td>
+                <td>Force the operation to be one transaction</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$requestControlId</td>
+                <td>Request control ID</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$uniqueFunctionControlIds</td>
+                <td>Force the function control ID's to be unique</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>Overriding params see IntacctClient::__construct() for these</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Intacct/Xml/SynchronousResponse.html"><abbr title="Intacct\Xml\SynchronousResponse">SynchronousResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_executeAsync">
+        <div class="location">at line         line 212</div>
+        <code>                    <a href="../Intacct/Xml/AsynchronousResponse.html"><abbr title="Intacct\Xml\AsynchronousResponse">AsynchronousResponse</abbr></a>
+    <strong>executeAsync</strong>(<a href="../Intacct/Content.html"><abbr title="Intacct\Content">Content</abbr></a> $contentBlock, string $asyncPolicyId, bool $transaction = false, string $requestControlId = null, bool $uniqueFunctionControlIds = false, array $params = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute an asynchronous request to the API</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../Intacct/Content.html"><abbr title="Intacct\Content">Content</abbr></a></td>
+                <td>$contentBlock</td>
+                <td>Content block to send</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$asyncPolicyId</td>
+                <td>Intacct asynchronous policy ID</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$transaction</td>
+                <td>Force the operation to be one transaction</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$requestControlId</td>
+                <td>Request control ID</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$uniqueFunctionControlIds</td>
+                <td>Force the function control ID's to be unique</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>Overriding params see IntacctClient::__construct() for these</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../Intacct/Xml/AsynchronousResponse.html"><abbr title="Intacct\Xml\AsynchronousResponse">AsynchronousResponse</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
